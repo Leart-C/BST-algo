@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search Tree</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bst-visualization">
+        <canvas id="bst-visualization" width="1024" height="400"></canvas>
+      </div>
+      <div class="bst-controls">
+        <label for="node-value">Node Value:</label>
+        <input type="number" id="node-value" />
+        <button onclick="insertNode()">Insert Node</button>
+        <button onclick="removeNode()">Remove Node</button>
+        <button onclick="searchNode()">Search</button>
+        <button onclick="inOrderTraversal()">In-Order Traversal</button>
+        <button onclick="preOrderTraversal()">Pre-Order Traversal</button>
+        <button onclick="postOrderTraversal()">Post-Order Traversal</button>
+
+        <label for="search-value">Search Value:</label>
+        <input type="number" id="search-value" />
+
+        <textarea id="traversal-result" rows="4" cols="50" readonly></textarea>
+      </div>
+    </div>
+
+    <script src="visualization.js"></script>
+    <script src="bst.js"></script>
+  </body>
+</html>
